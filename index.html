@@ -210,6 +210,16 @@
       const url = 'resume.pdf';
       window.open(url, '_blank');
     }
+     // For real: use fetch() to POST to your backend API or use Formspree / Netlify forms
+     return false;
+    }
+
+    // Download resume placeholder
+    function downloadResume(){
+      // Replace url with your resume file path e.g. /assets/Sanket_Pawar_Resume.pdf
+      const url = 'resume.pdf';
+      window.open(url, '_blank');
+    }
 
     // Year
     document.getElementById('year').textContent = new Date().getFullYear();
