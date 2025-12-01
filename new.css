@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanket Pawar — DevOps & Cloud Engineer</title>
+  <meta name="description" content="Sanket Pawar - DevOps Engineer. AWS, Docker, Kubernetes, Terraform, CI/CD. Portfolio and contact."/>
+  <meta name="author" content="Sanket Pawar">
+  <style>
+    :root{
+      --bg:#0f1724; --card:#0b1220; --muted:#9aa4b2; --accent:#2b8cff; --glass: rgba(255,255,255,0.03);
+      --radius:12px; --maxw:1100px; --mono: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family:var(--mono); background:
+      radial-gradient(1200px 600px at 10% 10%, rgba(43,140,255,0.06), transparent 8%),
+      linear-gradient(180deg, var(--bg), #071021 60%);
+      color:#e6eef8; -webkit-font-smoothing:antialiased;
+    }
+    .wrap{max-width:var(--maxw); margin:36px auto; padding:28px; display:grid; gap:24px;}
+    header{display:flex; align-items:center; gap:18px}
+    .logo{
+      width:68px;height:68px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#66d1ff);
+      display:flex;align-items:center;justify-content:center;font-weight:700;color:#02213a;font-size:18px;
+      box-shadow:0 6px 18px rgba(11,18,32,0.6);
+    }
+    h1{margin:0;font-size:28px}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+
+    main{display:grid; grid-template-columns:1fr 360px; gap:24px; align-items:start;}
+    @media (max-width:900px){ main{grid-template-columns:1fr} .sidebar{order:2} }
+
+    /* Card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+          border-radius:var(--radius); padding:18px; box-shadow: 0 6px 24px rgba(2,6,23,0.6); border:1px solid rgba(255,255,255,0.03)}
+    .hero{display:flex;gap:18px;align-items:center}
+    .avatar{width:92px;height:92px;border-radius:14px;background:linear-gradient(135deg,#fff, #ddd);color:#012;display:flex;
+            align-items:center;justify-content:center;font-weight:800}
+    .tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+    .tag{background:var(--glass);padding:6px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+    /* Projects */
+    .projects{display:grid;gap:12px}
+    .project{display:flex;flex-direction:column;gap:8px}
+    .project .title{font-weight:700}
+    .project .meta{color:var(--muted);font-size:13px}
+
+    /* Sidebar */
+    .sidebar{display:flex;flex-direction:column;gap:16px}
+    .contact-list{display:flex;flex-direction:column;gap:8px}
+    .btn{background:var(--accent);border:none;padding:10px 14px;border-radius:10px;color:#02213a;font-weight:700;cursor:pointer}
+    a.link{color:var(--accent);text-decoration:none}
+
+    footer{margin-top:18px;color:var(--muted);font-size:13px;text-align:center;padding-bottom:20px}
+
+    /* Form simple */
+    form input, form textarea{
+      width:100%; padding:10px; border-radius:8px; border:1px solid rgba(255,255,255,0.04);
+      background:transparent;color:inherit;font-size:14px; outline:none;
+    }
+    label {font-size:13px;color:var(--muted);display:block;margin-bottom:6px}
+    .small {font-size:13px;color:var(--muted)}
+    .flex {display:flex;gap:12px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="logo">SP</div>
+      <div>
+        <h1>Sanket Pawar</h1>
+        <p class="lead">DevOps & Cloud Engineer — AWS • Docker • Kubernetes • Terraform</p>
+      </div>
+    </header>
+
+    <main>
+      <section>
+        <div class="card hero">
+          <div class="avatar" aria-hidden="true">SP</div>
+          <div>
+            <h2 style="margin:0 0 6px 0">Hi, I'm Sanket</h2>
+            <p class="small" style="margin:0 0 8px 0;color:var(--muted)">
+              I build scalable and secure cloud infrastructure, automate CI/CD pipelines, and deploy production-ready systems.
+            </p>
+            <div class="tags">
+              <span class="tag">AWS</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Kubernetes</span>
+              <span class="tag">Terraform</span>
+              <span class="tag">Jenkins</span>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Projects</h3>
+          <div class="projects">
+            <div class="project">
+              <div class="title">Portfolio Website</div>
+              <div class="meta">HTML/CSS/JS • Hosted on S3 • Repo: <a class="link" href="https://github.com/SanketPawar001/Portfolio.git" target="_blank">GitHub</a></div>
+              <div class="small">A static responsive portfolio showcasing projects and contact information.</div>
+            </div>
+
+            <div class="project">
+              <div class="title">CI/CD Pipeline</div>
+              <div class="meta">Jenkins • Docker • Kubernetes</div>
+              <div class="small">Automated pipeline building, testing, containerization and Kubernetes deployment.</div>
+            </div>
+
+            <div class="project">
+              <div class="title">Infrastructure as Code</div>
+              <div class="meta">Terraform • AWS</div>
+              <div class="small">IaC modules to provision VPC, EKS cluster, and S3 hosting with CloudFront.</div>
+            </div>
+          </div>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h3 style="margin-top:0">About Me</h3>
+          <p class="small">
+            I'm a passionate DevOps engineer with experience in building automated pipelines, container orchestration, and cloud-native architectures.
+            I enjoy solving infrastructure challenges and bringing development and operations together.
+          </p>
+        </div>
+
+        <div style="height:12px"></div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Contact</h3>
+          <form id="contactForm" onsubmit="return handleSubmit(event)">
+            <label for="name">Name</label>
+            <input id="name" name="name" placeholder="Your name" required>
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="your@email.com" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project..." required></textarea>
+
+            <div style="height:10px"></div>
+            <button class="btn" type="submit">Send Message</button>
+            <p id="formStatus" class="small" style="margin-top:8px;color:var(--muted)"></p>
+          </form>
+        </div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="card">
+          <h4 style="margin:0 0 8px 0">Quick Links</h4>
+          <div class="contact-list">
+            <div class="small">Email: <a class="link" href="mailto:sanketpawar@example.com">sanketpawar@example.com</a></div>
+            <div class="small">Phone: <a class="link" href="tel:+919876543210">+91 98765 43210</a></div>
+            <div class="small">GitHub: <a class="link" href="https://github.com/SanketPawar001" target="_blank">/SanketPawar001</a></div>
+            <div class="small">LinkedIn: <a class="link" href="#" target="_blank">/in/sanketpawar</a></div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 8px 0">Skills</h4>
+          <div class="small">Cloud: AWS (EC2, S3, EKS, CloudFront)</div>
+          <div class="small">Containers: Docker, Kubernetes (EKS)</div>
+          <div class="small">CI/CD: Jenkins, GitHub Actions</div>
+          <div class="small">IaC: Terraform, CloudFormation</div>
+          <div class="small">Monitoring: Prometheus, Grafana, ELK</div>
+        </div>
+
+        <div class="card">
+          <h4 style="margin:0 0 8px 0">Download</h4>
+          <a class="btn" href="#" onclick="downloadResume()">Download Resume</a>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Sanket Pawar • Built with HTML/CSS/JS • Deploy to S3 / GitHub Pages
+    </footer>
+  </div>
+
+  <script>
+    // Basic form handling (client-side demo). Replace with API endpoint for production.
+    function handleSubmit(e){
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const status = document.getElementById('formStatus');
+
+      if(!name||!email||!message){ status.textContent='Please fill all fields.'; return; }
+
+      // simulate sending
+      status.textContent = 'Sending message...';
+      setTimeout(()=>{
+        status.textContent = 'Message sent — thank you! I will reply soon.';
+        document.getElementById('contactForm').reset();
+      }, 900);
+
+      // For real: use fetch() to POST to your backend API or use Formspree / Netlify forms
+      return false;
+    }
+
+    // Download resume placeholder
+    function downloadResume(){
+      // Replace url with your resume file path e.g. /assets/Sanket_Pawar_Resume.pdf
+      const url = 'resume.pdf';
+      window.open(url, '_blank');
+    }
+     // For real: use fetch() to POST to your backend API or use Formspree / Netlify forms
+     return false;
+    }
+
+    // Download resume placeholder
+    function downloadResume(){
+      // Replace url with your resume file path e.g. /assets/Sanket_Pawar_Resume.pdf
+      const url = 'resume.pdf';
+      window.open(url, '_blank');
+    }
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
